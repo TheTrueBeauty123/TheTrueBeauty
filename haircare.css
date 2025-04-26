@@ -1171,7 +1171,7 @@ nav {
 }
 
 body {
-    background-image: url("images/4.jpeg"); /* Apni image ka path yahan likhen */
+    background-image: url("4.jpeg"); /* Apni image ka path yahan likhen */
     background-size: cover; /* Puri screen ko cover karne ke liye */
     background-repeat: no-repeat; /* Repeat na hone ke liye */
     background-position: center; /* Image ko center me rakhne ke liye */
