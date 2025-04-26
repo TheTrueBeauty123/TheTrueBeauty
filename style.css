@@ -1537,6 +1537,14 @@ h2 {
     text-align: center;
     color: red;
 }
-@media only screen and (max-width: 600px) {
-    /* Mobile-specific styles here */
+@media (max-width: 768px) {
+    /* Mobile styles */
+    body {
+        font-size: 16px; /* Adjust text size */
+    }
+
+    .container {
+        width: 100%; /* Make sure the container uses full width */
+        padding: 10px; /* Add padding for better spacing */
+    }
 }
