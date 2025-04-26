@@ -1537,3 +1537,6 @@ h2 {
     text-align: center;
     color: red;
 }
+@media only screen and (max-width: 600px) {
+    /* Mobile-specific styles here */
+}
