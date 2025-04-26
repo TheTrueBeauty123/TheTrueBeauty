@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Art - The Beauty Touch</title>
+    <link rel="stylesheet" href="nail.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>The Beauty Touch</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Service ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="haircare.html">Hair Care</a></li>
+                    <li><a href="skincare.html">Skin Care</a></li>
+                    <li><a href="waxing.html">Waxing</a></li> 
+                    <li><a href="nailart.html">Nail Art</a></li>
+                    <li><a href="mehdi.html">Mehndi</a></li>
+                </ul>
+            </li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Nail Art Section -->
+    <div id= "nail-page">
+    <div class="container">
+         <!-- Left Side Menu -->
+        <!-- Left Side Menu -->
+          <div class="sidebar">
+          <button class="menu-btn active">Simple Nail Art</button> <!-- Default active -->
+          <button class="menu-btn">Gel Nail Art</button>
+          <button class="menu-btn">French Nail Art</button>
+          </div>
+
+        <!-- Right Side -->
+        <div class="content">
+            <div class="service-box">
+            <div class="service-details">
+                <h2>Simple Nail Art</h2>
+                <p>Basic Designs - ₹200</p>
+                <p>Full Hand - ₹300</p>
+                <p>With Stones - ₹400</p>
+                <a href="booking.html" class="book-btn">Book Now</a>`;
+            </div> 
+
+<script>
+    document.querySelectorAll('.menu-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        // Pehle sabhi buttons se active class hatado
+        document.querySelectorAll('.menu-btn').forEach(btn => btn.classList.remove('active'));
+        
+        // Ab click kiye hue button pe active class add karo
+        this.classList.add('active');
+        
+        let category = this.innerText.trim();
+        let details = document.querySelector('.service-details');
+        
+        if (category === "Simple Nail Art") {
+            details.innerHTML = `<h2>Simple Nail Art</h2>
+                <p>Basic Designs - ₹200</p>
+                <p>Full Hand - ₹300</p>
+                <p>With Stones - ₹400</p>
+             <a href="booking.html" class="book-btn">Book Now</a>`;
+        } else if (category === "Gel Nail Art") {
+            details.innerHTML = `<h2>Gel Nail Art</h2>
+                <p>Gel Overlay - ₹500</p>
+                <p>Gel Extensions - ₹700</p>
+                <p>Custom Designs - ₹800</p>
+                <a href="booking.html" class="book-btn">Book Now</a>`;
+        } else if (category === "French Nail Art") {
+            details.innerHTML = `<h2>French Nail Art</h2>
+                <p>Classic French - ₹350</p>
+                <p>Colored Tips - ₹400</p>
+                <p>With Decorations - ₹500</p>
+                <a href="booking.html" class="book-btn">Book Now</a>`;
+        }
+    });
+});
+
+
+</script>
+
+</body>
+</html>

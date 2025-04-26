@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Test</title></head>
+<body>
+  <form id="bookingForm">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="text" name="number" placeholder="Phone" required>
+    <input type="submit" value="Book via WhatsApp">
+  </form>
+
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = this.elements["name"].value;
+      const number = this.elements["number"].value;
+
+      const msg = Name: ${name}, Phone: ${number};
+      const url = https://wa.me/917984285725?text=${encodeURIComponent(msg)};
+      window.open(url, "_blank");
+    });
+  </script>
+</body>
+</html>

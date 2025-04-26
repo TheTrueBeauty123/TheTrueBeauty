@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehndi - The Beauty Touch</title>
+    <link rel="stylesheet" href="mehdi.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>The Beauty Touch</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Service ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="haircare.html">Hair Care</a></li>
+                    <li><a href="skincare.html">Skin Care</a></li>
+                    <li><a href="waxing.html">Waxing</a></li>
+                    <li><a href="mehndi.html">Mehndi</a></li>
+                    <li><a href="nailart.html">Nail Art</a></li>
+                </ul>
+            </li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mehndi Section -->
+    <div class="container">
+        <!-- Right Side: Tabs -->
+        <div class="sidebar">
+            <button class="menu-btn active">Bridal</button> <!-- Default active -->
+            <button class="menu-btn">Arabic</button>
+            <button class="menu-btn">Traditional</button>
+            <button class="menu-btn">Only Feet</button>
+            
+        </div>
+
+      <!-- Right Side -->
+        <div class="content">
+            <div class="service-box">
+            <div class="service-details">
+                <h2>Bridal Mehndi</h2>
+                <p>Full Hands & Feet - ₹3000</p>
+                <p>Half Hands & Feet - ₹2000</p>
+                <a href="booking.html" class="book-btn">Book Now</a>`;
+            </div>
+   <script>
+    document.querySelectorAll('.menu-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        // Pehle sabhi buttons se active class hatado
+        document.querySelectorAll('.menu-btn').forEach(btn => btn.classList.remove('active'));
+        
+        // Ab click kiye hue button pe active class add karo
+        this.classList.add('active');
+        
+        let category = this.innerText.trim();
+        let details = document.querySelector('.service-details');
+        
+        if (category === "Bridal")
+        {
+            details.innerHTML = `<h2>Bridal Mehndi</h2>
+                <p>Full Hands & Feet - ₹3000</p>
+                <p>Half Hands & Feet - ₹2000</p>
+	        <p>Royal Bridal Mehndi-₹2000</p>
+                <p>Modern Bridal Mehndi-₹2000 </p>
+                <a href="booking.html" class="book-btn">Book Now</a>`;
+        } else if (category === "Arabic")
+        {
+            details.innerHTML = `<h2>Arabic Mehndi</h2>
+                <p>Full Hands - ₹1500</p>
+                <p>Half Hands - ₹1000</p>
+		<p>Shaded Arabic- 500</p>
+		<p>Floral Arabic- 450</p>
+		<p>Simple Arabic- 400 </p>
+               <a href="booking.html" class="book-btn">Book Now</a>`;
+        } else if (category === "Traditional")
+        {
+            details.innerHTML = `<h2>Traditional Mehndi</h2>
+                <p>Full Hands - ₹1200</p>
+                <p>Half Hands - ₹800</p>
+                <a href="booking.html" class="book-btn">Book Now</a>`;
+        
+        } else if (category === "Only Feet")
+        {
+            details.innerHTML = `<h2>Foot Mehndi</h2>
+                <p>Simple Feet - ₹200</p>
+                <p>Bridal Feet - ₹1000</p>
+                <p>Abklet style Feet -₹500</p>
+		<p>Customized Designs-₹700</p>
+               <a href="booking.html" class="book-btn">Book Now</a>`;
+        }
+    });
+});
+        function showCategory(category) {
+            var categories = document.getElementsByClassName('service-category');
+            var buttons = document.getElementsByClassName('category-btn');
+            
+            for (var i = 0; i < categories.length; i++) {
+                categories[i].style.display = "none";
+            }
+
+            for (var j = 0; j < buttons.length; j++) {
+                buttons[j].classList.remove('active');
+            }
+
+            document.getElementById(category).style.display = "block";
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>

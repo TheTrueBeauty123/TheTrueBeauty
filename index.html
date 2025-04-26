@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beauty Touch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>The Beauty Touch</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+
+   <nav>
+        <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropbtn">Service ▾</a>
+        <ul class="dropdown-content">
+             <li><a href="haircare.html">Hair Care</a></li>
+            <li><a href="skincare.html">Skin Care</a></li>
+             <li><a href="waxing.html">Waxing</a></li>
+            <li><a href="nailart.html">Nail Art</a></li>
+            <li><a href="mehdi.html">Mehndi</a></li>
+        </ul>
+    </li>
+    <li><a href="feedback.html">Feedback</a></li>
+    <li><a href="contact.html">About Us</a></li>
+</ul>
+    </nav>
+
+
+    <!-- Image Slider -->
+    <div class="slider">
+    <div class="slide-track">
+        <img src="8.jpeg" alt="Image 1">
+        <img src="3.jpeg" alt="Image 2">
+        <img src="15.jpeg" alt="Image 3">
+        <img src="12.jpeg" alt="Image 4">
+        
+        <!-- Duplicate Images for Smooth Loop Effect -->
+        <img src="8.jpeg" alt="Image 1">
+        <img src="3.jpeg" alt="Image 2">
+        <img src="15.jpeg" alt="Image 3">
+        <img src="12.jpeg" alt="Image 4">
+       
+    </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    let currentPage = window.location.pathname.split("/").pop(); // Get current page name
+    let menuLinks = document.querySelectorAll(".menu a");
+
+    menuLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active"); // Add active class
+        }
+    });
+});
+</script>
+</body>
+</html>

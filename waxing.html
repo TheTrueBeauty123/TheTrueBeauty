@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Care - The Beauty Touch</title>
+    <link rel="stylesheet" href="wax.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>The Beauty Touch</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Service ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="haircare.html">Hair Care</a></li>
+                    <li><a href="skincare.html">Skin Care</a></li>
+                    <li><a href="waxing.html">Waxing</a></li>
+                    <li><a href="nailart.html">Nail Art</a></li>
+                    <li><a href="mehdi.html">Mehndi</a></li>
+                </ul>
+            </li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+            <button class="menu-btn">Regular Wax</button>
+            <button class="menu-btn">Cream/D-Tan/Chocolate Wax</button>
+            <button class="menu-btn">Rica Wax</button>
+            <button class="menu-btn">Lipo Wax</button>
+            <button class="menu-btn">Brazilian/Bean Wax</button>
+        </div>
+     <!-- Right Side -->
+        <div class="content">
+            <div class="service-box">
+               <div class="service-details">
+                     <h2>Regular Wax</h2>
+                    <p>Upper lips - ₹30</p>
+                    <p>Face - ₹150</p>
+                    <p>Full arms - ₹150</p>
+                    <p>Under arms - ₹60</p>
+                    <p>Half legs - ₹150</p>
+                    <p>Full legs - ₹250</p>
+                    <p>Half hands - ₹100</p>
+                    <p>Full hands - ₹150</p>
+                    <p>Stomach & back - ₹200</p>
+                    <p>Full body - ₹700</p>
+                   <a href="booking.html" class="book-btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+<script>
+const buttons = document.querySelectorAll('.menu-btn');
+buttons[0].classList.add('active');
+
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+
+        let category = this.innerText;
+        let details = document.querySelector('.service-details');
+        
+        if (category === "Regular Wax") {
+            details.innerHTML =  `<h2>Regular Wax</h2>
+                <p>Upper lips - ₹30</p>
+                <p>Face - ₹150</p>
+                <p>Full arms - ₹150</p>
+                <p>Under arms - ₹60</p>
+                <p>Half legs - ₹150</p>
+                <p>Full legs - ₹250</p>
+                <p>Half hands - ₹100</p>
+                <p>Full hands - ₹150</p>
+                <p>Stomach & back - ₹200</p>
+                <p>Full body - ₹700</p>
+                <a href="booking.html" class="book-btn">Book Now</a>`;
+        } else if (category === "Cream/D-Tan/Chocolate Wax") {
+            details.innerHTML = `<h2>Cream/D-Tan/Chocolate Wax</h2>
+                <p>Upper lips - ₹50</p>
+                <p>Face - ₹150</p>
+                <p>Full arms - ₹150</p>
+                <p>Under arms - ₹80</p>
+                <p>Half legs - ₹200</p>
+                <p>Full legs - ₹350</p>
+                <p>Half hands - ₹150</p>
+                <p>Full hands - ₹250</p>
+                <p>Stomach & back - ₹300</p>
+                <p>Full body - ₹800</p>
+                <a href="booking.html" class="book-btn">Book Now</a>`;
+        } else if (category === "Rica Wax") {
+            details.innerHTML = `<h2>Rica Wax</h2>
+                <p>Upper lips - ₹50</p>
+                <p>Face - ₹200</p>
+                <p>Under arms - ₹100</p>
+                <p>Half legs - ₹250</p>
+                <p>Full legs - ₹450</p>
+                <p>Half hands - ₹250</p>
+                <p>Full hands - ₹350</p>
+                <p>Stomach & back - ₹400</p>
+                <p>Full body - ₹1300</p>
+                <a href="booking.html" class="book-btn">Book Now</a>`;
+        } else if (category === "Lipo Wax") {
+            details.innerHTML = `<h2>Lipo Wax</h2>
+                <p>Face - ₹300</p>
+                <p>Under arms - ₹150</p>
+                <p>Half legs - ₹400</p>
+                <p>Full legs - ₹600</p>
+                <p>Half hands - ₹300</p>
+                <p>Full hands - ₹500</p>
+                <p>Full body - ₹1800</p>
+                <p>Bikini Wax - ₹400</p>
+                <a href="booking.html" class="book-btn">Book Now</a>`;
+        } else if (category === "Brazilian/Bean Wax") {
+            details.innerHTML = `<h2>Brazilian/Bean Wax</h2>
+                <p>Forehead - ₹70</p>
+                <p>Upper lips - ₹50</p>
+                <p>Face wax - ₹500</p>
+                <p>Under arms - ₹200</p>
+                <a href="booking.html" class="book-btn">Book Now</a>`;
+        }
+    });
+});
+</script>    
+</body>
+</html>

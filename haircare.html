@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Care - The Beauty Touch</title>
+    <link rel="stylesheet" href="haircare.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>The Beauty Touch</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Service ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="haircare.html">Hair Care</a></li>
+                    <li><a href="skincare.html">Skin Care</a></li>
+                    <li><a href="waxing.html">Waxing</a></li>
+                    <li><a href="nailart.html">Nail Art</a></li>
+                    <li><a href="mehndi.html">Mehndi</a></li>
+                </ul>
+            </li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">About Us</a></li>
+        </ul>
+    </nav>
+ <!-- Hair Care Section -->
+<div id= "hair-page">
+    <div class="container">
+        <!-- Left Side Menu -->
+        <div class="sidebar">
+            <button class="menu-btn">Hair Styling</button>
+            <button class="menu-btn">Hair Cutting</button>
+            <button class="menu-btn">Hair Care</button>
+            <button class="menu-btn">Hair Colour</button>
+     
+        </div>
+
+        <!-- Right Side -->
+        <div class="content">
+            <div class="service-box">
+               
+                <div class="service-details">
+                    <h2>Hair Styling</h2>
+                    <p>Hair Wash - ₹150</p>
+                    <p>Hair Drying - ₹100</p>
+                    <p>Straightening - ₹500</p>
+                    <p>Curls - ₹300</p>
+                   <a href="booking.html" class="book-btn">Book Now</a>`;
+                </div>
+            </div>
+</div>
+</div>
+<script>
+   
+// Sabhi buttons ko select karenge
+const buttons = document.querySelectorAll('.menu-btn');
+
+// By default pehla button select hoga
+buttons[0].classList.add('active');
+
+// Button par click karne par selected state change karne ke liye
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        // Sabhi buttons se 'active' class remove karenge
+        buttons.forEach(btn => btn.classList.remove('active'));
+        
+        // Clicked button par 'active' class add karenge
+        this.classList.add('active');
+
+        // Service details update karenge
+        let category = this.innerText;
+        let details = document.querySelector('.service-details');
+        
+        if (category === "Hair Styling") {
+            details.innerHTML =  `<h2>Hair Styling</h2>
+                <p>Hair Wash - ₹150</p>
+                <p>Hair Drying - ₹100</p>
+                <p>Straightening - ₹500</p>
+                <p>Curls - ₹300</p>
+               <a href="booking.html" class="book-btn">Book Now</a>`;
+        } else if (category === "Hair Cutting") {
+            details.innerHTML = `<h2>Hair Cutting</h2>
+                <p>Basic Cut - ₹200</p>
+                <p>Layer Cut - ₹350</p>
+                <p>U Cut - ₹300</p>
+                <p>Step Cut - ₹400</p>
+               <a href="booking.html" class="book-btn">Book Now</a>`;
+        } else if (category === "Hair Care") {
+            details.innerHTML = `<h2>Hair Care</h2>
+               <p>Hair Spa - ₹500</p>
+                <p>Deep Conditioning - ₹400</p>
+                <p>Oil Massage - ₹300</p>
+                <a href="booking.html" class="book-btn">Book Now</a>`;
+        } else if (category === "Hair Colour") {
+            details.innerHTML = `<h2>Hair Colour</h2>
+               <p>Global Color - ₹1500</p>
+                <p>Highlights - ₹1200</p>
+                <p>Root Touch-up - ₹800</p>
+               <a href="booking.html" class="book-btn">Book Now</a>`;
+        }
+    });
+});
+</script>
+</body>
+</html>

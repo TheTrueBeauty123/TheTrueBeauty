@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - The Beauty Touch</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <header>
+        <h1>The Beauty Touch</h1>
+         <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Service ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Hair Care</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                    <li><a href="#">Waxing</a></li>
+                    <li><a href="#">Nail Art</a></li>
+                    <li><a href="#">Mehndi</a></li>
+                </ul>
+            </li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">About Us</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <h2>Customer Feedback</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="5">⭐ ⭐ ⭐ ⭐ ⭐ (5)</option>
+                <option value="4">⭐ ⭐ ⭐ ⭐ (4)</option>
+                <option value="3">⭐ ⭐ ⭐ (3)</option>
+                <option value="2">⭐ ⭐ (2)</option>
+                <option value="1">⭐ (1)</option>
+            </select>
+
+            <label for="message">Your Feedback:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html>

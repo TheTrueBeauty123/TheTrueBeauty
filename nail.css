@@ -1,0 +1,1350 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E3F2FD000; /* Baby Blue */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #ff0000;; /* Sky Blue */
+    text-align: center;
+    padding:0.1px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #ADD8E6; /* Sky Blue */
+    padding: 15px;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* Hover Effect */
+.menu a:hover {
+    background-color: #000; /* Slightly Darker Blue */
+    border-radius: 5px;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #64B5F6;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #BBDEFB; /* Lighter Blue */
+}
+
+/* Show Dropdown on Click */
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+/* Image Slider */
+.slider {
+    width: 500%;
+    overflow: hidden;
+    position: relative;
+    background: #f8f8f8;
+    padding: 20px 0;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(200px * 12); /* (6 images * 2 for loop) */
+    animation: slideAnimation 10s linear infinite alternate;
+}
+
+.slide-track img {
+    width: 400px;
+    height:400px ;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+/* Right to Left and Left to Right Animation */
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-50%); } /* Move left */
+    100% { transform: translateX(0); } /* Move back right */
+}
+/* Menu items hover effect */
+.navbar ul li a:hover {
+    background-color: #89CFF0; /* Light blue highlight */
+    color: white; /* Text color change */
+    transition: 0.3s; /* Smooth effect */
+}
+/* Drop-down menu ko initially hide karo */
+.navbar ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #89CFF0; /* Light blue */
+    padding: 10px;
+    list-style: none;
+    width: 150px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Jab mouse "Service" par jaye to drop-down show ho */
+.navbar ul li:hover > ul {
+    display: block;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+header {
+    background-color: #5c9ead;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+.contact-section, .feedback-section {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #5c9ead;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #4682b4;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+header {
+    background-color: #5c9ead;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+.contact-section, .feedback-section {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #5c9ead;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #ffcc00;
+}
+.menu a.active {
+    background-color: #ffcc00; /* Yellow Background */
+    color: #000 !important; /* Black Text */
+    font-weight: bold;
+    border-radius: 5px; /* Thoda curve */
+}
+/* Dropdown menu styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffcc00;
+    color: white;
+}
+
+/* 🟢 Jab mouse "Service" par jaye tab dropdown dikhega */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.service-section {
+    text-align: center;
+    padding: 5px;
+}
+
+.service-box {
+    background: #fff;
+    padding: 12px;
+    margin: 12px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-box h3 {
+    color: #5a2a8a;
+}
+
+.service-box img {
+    width: 50%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.service-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-box ul li {
+    font-size: 16px;
+    padding: 5px 0;
+    color: #333;
+}
+
+button {
+    background: #5a2a8a;
+    color:#000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #000;
+}
+.haircare-container {
+    display: flex;
+    justify-content: center; /* Center align */
+    align-items: center;
+    width: 100vw; /* Full width */
+    height: auto;
+    padding: 20px;
+    background-color: #f8f1eb; /* Soft background */
+}
+.haircare-image img {
+    width: 80%; /* 80% width le */
+    max-width: 500px; /* Maximum width 500px */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Center image */
+    border-radius: 10px; /* Smooth edges */
+}
+.haircare-section {
+    width: 60vw; /* Screen ka 60% part le */
+    max-width: 800px; /* Max width fix */
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: center;
+}
+/* Haircare Page Styles */
+.haircare-container {
+    width: 100vw;
+    display: fit;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: none;
+}
+
+.haircare-section {
+    width: 80vw;
+    max-width: 100px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+ .haircare-img {
+    width: 10px;
+    height:5%;
+}
+.haircare-section {
+    max-height: 500px;  /* Fixed height set ki */
+    overflow-y: auto;  /* Scroll hone se bachane ke liye */
+    padding: 20px;
+    background: none;
+}
+/* Booking Section Styles */
+.booking-section {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.book-now-btn {
+  padding: 10px 15px;
+  background: #ff4081;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-now-btn:hover {
+  background: #d6336c;
+}
+.book-now-btn {
+  background-color: #ff4d6d; /* Pink color */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.book-now-btn:hover {
+  background-color: #ff1a4d; /* Darker pink on hover */
+}
+.hair-care-container {
+    display:fit;
+    gap: 20px; /* Space between buttons & content */
+}
+
+.hair-care-buttons {
+    display: flex;
+    flex-direction: column; /* Buttons vertically */
+    gap: 10px;
+}
+
+.hair-care-buttons button {
+    background-color: #4a148c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    white-space: nowrap;
+}
+
+.hair-care-buttons button:hover {
+    background-color: #7b1fa2;
+}
+
+.hair-care-content {
+    flex-grow: 1;
+    padding: 10px;
+    border-left: 2px solid #ddd;
+}
+.hair-care-container {
+    display: flex;
+    gap: 10px; /* Space between buttons & content */
+}
+
+.hair-care-buttons {
+    display: flex;
+    flex-direction: column; /* Buttons vertically */
+    gap: 10px;
+}
+
+.hair-care-buttons button {
+    background-color: #4a148c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    white-space: nowrap;
+}
+
+.hair-care-buttons button:hover {
+    background-color: #7b1fa2;
+}
+
+.hair-care-content {
+    flex-grow: 1;
+    padding: 20px;
+    border-left: 2px solid #ddd;
+    
+}
+.hair-styling {
+    background-image: url('hair-styling.jpg'); /* Apni image ka path yahan lagayein */
+    background-size: cover;
+    background-position: center;
+}
+
+.hair-care {
+    background-image: url('hair-care.jpg'); /* Hair Care ki image */
+    background-size: cover;
+    background-position: center;
+}
+
+.hair-colour {
+    background-image: url('hair-colour.jpg'); /* Hair Colour ki image */
+    background-size: cover;
+    background-position: center;
+}
+img {
+    width: 100%; /* Full width ke liye */
+    max-width: 400px; /* Maximum width 400px hogi */
+    height:Auto; /* Auto height adjust hogi */
+    border-radius: 10px; /* Corners thode round ho jayenge */
+}
+.hair-section {
+    display: flex;
+    align-items: center; /* Vertical center */
+    justify-content: center; /* Horizontal center */
+    width: 50vw; /* Full screen width */
+    height: 50vh; /* Full screen height */
+    overflow: hidden; /* Extra content hide */
+}
+
+.hair-image {
+    flex: 1; /* 50% width lega */
+    height: 80%;
+}
+
+.hair-image img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover; /* Image ko distort hone se bachayega */
+}
+
+.hair-details {
+    flex: 1; /* 50% width lega */
+    padding: 20px;
+    background: white; /* Dark transparent background */
+    color: black;
+    text-align: center;
+    height: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hair-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hair-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hair-details ul li {
+    margin: 2px 0;
+    font-size: 12px;
+}
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-box {
+    display: none; /* Default hidden */
+    flex-direction: row; /* Side by side layout */
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.service-details {
+    margin-left: 20px;
+}
+
+.service-details h2 {
+    color: #333;
+}
+
+.book-btn {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.service-box {
+    display: none;  /* Side by side layout */
+    flex-direction: row;  /* Row me set karna */
+    align-items: center;  /* Center align */
+    justify-content: space-between;  /* Space adjust karna */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-img {
+    width: 60%;  /* Image ko chhota karna */
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-details {
+    width: 100%;  /* Text ke liye jagah dena */
+    margin-left: 10px;
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.service-box {
+    display: none; /* Sab services by default hide */
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-box img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.service-details {
+    flex: 1;
+    text-align: left;
+    padding: 80px; /* Padding badhaya takay text ache se fit ho */
+    min-height: 250px; /* Minimum height set ki takay button niche ho */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between; /* Content ko evenly space karega */
+}
+
+/* Default service (Hair Styling) show */
+#hairStyling {
+    display: flex;
+}
+.service-details p {
+    display: flex; /* Text ek line me rakhne ke liye */
+    justify-content: space-between; /* Naam aur price ke beech space */
+    align-items: center; /* Properly align karne ke liye */
+    white-space: nowrap; /* Text ko wrap hone se rokne ke liye */
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+/* skin care */
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+
+.menu-btn {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #2d2d2d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background-color: #ff0000;
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-box {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.service-box img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-details {
+    margin-left: 20px;
+}
+
+.service-details h2 {
+    color: black;
+}
+
+.service-details p {
+    color: black;
+    font-size: 18px;
+}
+
+.book-btn {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+/* waxing */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-btn {
+    background-color: #2d2d2d;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+.category-btn:hover, .category-btn.active {
+    background-color: #ff0000;
+}
+
+.content {
+    display: flex;
+    background-color: transparent;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.service-image {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-details {
+    margin-left: 20px;
+}
+
+h2 {
+    color: #ff0000;
+}
+
+h3 {
+    color: #ff0000;
+}
+
+p {
+    font-size: 18px;
+}
+
+.book-now {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.book-now:hover {
+    background-color: #cc0000;
+}
+
+.service-category {
+    display: none;
+}
+
+.service-category.active {
+    display: block;
+}
+
+.service-details p {
+    color: black;
+    font-size: 18px;
+}
+
+.book-btn {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+/* &waxing */
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+
+.menu-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #2d2d2d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background-color: #ff0000;
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-box {
+    display: flex;
+    background-colour: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.service-box img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-details {
+    margin-left: 20px;
+}
+
+.service-details h2 {
+    color: black;
+}
+
+.service-details p {
+    color: black;
+    font-size: 18px;
+}
+
+.book-btn {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.menu-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #2d2d2d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* mehndi */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-btn {
+    background-color: #2d2d2d;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+.category-btn:hover, .category-btn.active {
+    background-color: #ff0000;
+}
+
+.content {
+    display: flex;
+    background-color: transparent;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.service-image {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-details {
+    margin-left: 20px;
+}
+
+h2 {
+    color: #ff0000;
+}
+
+h3 {
+    color: #ff0000;
+}
+
+p {
+    font-size: 18px;
+}
+
+.book-now {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.book-now:hover {
+    background-color: #cc0000;
+}
+
+.service-category {
+    display: none;
+}
+
+.service-category.active {
+    display: block;
+}
+
+.service-details p {
+    color: black;
+    font-size: 18px;
+}
+.service-box img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.book-btn {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* General Styling */
+
+header {
+    background-color: #000;
+    padding: 11px;
+    text-align: center;
+}
+nav {
+    background-color:#cc0000 ;
+    padding: 5px;
+    text-align: center;
+}
+.slider {
+    width: 500%;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+    padding: 20px 0;
+}
+/* Hover Effect */
+.menu a:hover {
+    background-color: #000; /* Slightly Darker Blue */
+    border-radius: 5px;
+}
+.menu a.active {
+    background-color: #fff; /* Yellow Background */
+    color: #000 !important; /* Black Text */
+    font-weight: bold;
+    border-radius: 5px; /* Thoda curve */
+}
+/* hair care */
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.menu-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color:black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background-color: #cc0000;
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-details {
+    margin-left: 20px;
+}
+
+.service-details h2 {
+    color: white;
+}
+
+.service-details p {
+    color: white;
+    font-size: 18px;
+}
+
+
+.book-btn {
+    padding: 10px 20px;
+    background-color: #cc0000; /* Golden color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.service-box {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5); /* yahan 0.5 transparency level hai, aap apne hisaab se change kar sakti hain */
+    color: white; /* Text color ko readable banane ke liye */
+    padding: 50px;
+
+}
+  
+
+
+.service-box {
+    width: 80%;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px 10px;
+    transition: all 0.3s ease;
+}
+
+.service-detail {
+    display: none; /* By default, detail hidden rahega */
+}
+
+.service-box.active .service-detail {
+    display: block; /* Jab active ho to detail show ho */
+}
+.facial-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+.service-details {
+    margin-left: 0px;
+}
+
+.facial-column {
+    width: 48%;
+}
+.service-details h2 {
+    text-align: center; /* Center me dikhane ke liye */
+    margin-bottom: 20px; /* Thoda gap create karne ke liye */
+}
+.service-details h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.facial-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Columns ke beech me space */
+}
+
+.facial-column {
+    text-align: left;
+}
+
+.book-btn {
+    display: block;
+    margin:10px auto; /* Center the button */
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* SIRF HEADING KO CENTER ME RAKHNE KE LIYE */
+.service-details h2 {
+  text-align: space-between;    /* Sirf "Facial" heading center */
+  margin-bottom: 10px;
+}
+
+/* FACIAL CONTAINER: items ko row me rakhne ke liye */
+.facial-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Columns ke beech me space */
+}
+
+/* FACIAL-COLUMN: content left align rahega */
+.facial-column {
+  width: 48%;
+  text-align: left;  /* Yeh ensure karega ke text left aligned ho */
+}
+
+/* BOOK BUTTON: center me dikhane ke liye */
+.book-btn {
+  display: block;
+  margin: 20px auto; /* Button center */
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.service-details {
+    margin-left: 0px;
+    margin-Right: 0px;
+}
+/* Booking Section Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.form-container {
+        background: white;
+	color: black;
+        padding: 20px;
+        width: 50%;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+
+    .form-container h2 {
+        text-align: center;
+        color: #cc0000;
+    }
+
+    .form-container input, .form-container select, .form-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form-container input[type="submit"] {
+        background-color: maroon;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .form-container input[type="submit"]:hover {
+        background-color: darkred;
+    }
+.form-container h2 {
+    text-align: center;
+    color: #cc0000;
+}
+body {
+    background-image: url("images/7.jpeg"); /* Apni image ka path yahan likhen */
+    background-size: cover; /* Puri screen ko cover karne ke liye */
+    background-repeat: no-repeat; /* Repeat na hone ke liye */
+    background-position: center; /* Image ko center me rakhne ke liye */
+}
+.menu-btn.active {
+    background-color: #cc0000; /* Jo bhi color tumhe chahiye wo use kar lo */
+    color: white;
+}
+.book-btn {
+    text-decoration: none !important; /* Underline forcefully remove karne ke liye */
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.book-btn:hover {
+    background-color: red;
+}
