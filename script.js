@@ -49,25 +49,3 @@ document.querySelectorAll('.service-box').forEach(box => {
             document.getElementById(category).classList.add('active');
             document.querySelector([onclick="showCategory('${category}')"]).classList.add('active');
         }
-// Dropdown functionality
-document.addEventListener("DOMContentLoaded", function () {
-  let dropdown = document.querySelector(".dropdown");
-  dropdown.addEventListener("click", function () {
-    this.classList.toggle("active");
-  });
-
-  // Highlight current menu
-  let currentPage = window.location.pathname.split("/").pop();
-  let menuLinks = document.querySelectorAll(".menu a");
-  menuLinks.forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active");
-    }
-  });
-});
-
-// Auto slider
-setInterval(function() {
-  let slider = document.querySelector('.slide-track');
-  slider.appendChild(slider.firstElementChild);
-}, 3000);
